@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.imooc.view.ViewPagerIndicator
+        android:id="@+id/id_indictor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_backgroud"
+        android:orientation="horizontal"
+        hyman:visible_tab_count="4">
+    </com.imooc.view.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
